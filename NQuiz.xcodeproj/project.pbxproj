@@ -7,21 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB1BB98A1C83A41700C873EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB9891C83A41700C873EE /* AppDelegate.swift */; };
-		EB1BB98C1C83A41700C873EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB98B1C83A41700C873EE /* ViewController.swift */; };
-		EB1BB98F1C83A41700C873EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB98D1C83A41700C873EE /* Main.storyboard */; };
+		83C0E4AF1427DE2E969E53F6 /* libPods-NQuiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA49E41BA732ADEE34665E32 /* libPods-NQuiz.a */; };
 		EB1BB9911C83A41700C873EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB9901C83A41700C873EE /* Assets.xcassets */; };
-		EB1BB9941C83A41700C873EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB9921C83A41700C873EE /* LaunchScreen.storyboard */; };
+		EB1BB9A51C83A45800C873EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB99B1C83A45800C873EE /* AppDelegate.swift */; };
+		EB1BB9A61C83A45800C873EE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB99C1C83A45800C873EE /* Question.swift */; };
+		EB1BB9A71C83A45800C873EE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB99D1C83A45800C873EE /* QuestionViewController.swift */; };
+		EB1BB9A81C83A45800C873EE /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB99E1C83A45800C873EE /* QuestionViewController.xib */; };
+		EB1BB9A91C83A45800C873EE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB99F1C83A45800C873EE /* QuizViewController.swift */; };
+		EB1BB9AA1C83A45800C873EE /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB9A01C83A45800C873EE /* QuizViewController.xib */; };
+		EB1BB9AB1C83A45800C873EE /* ThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB9A11C83A45800C873EE /* ThanksViewController.swift */; };
+		EB1BB9AC1C83A45800C873EE /* ThanksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB9A21C83A45800C873EE /* ThanksViewController.xib */; };
+		EB1BB9AD1C83A45800C873EE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB9A31C83A45800C873EE /* WelcomeViewController.swift */; };
+		EB1BB9AE1C83A45800C873EE /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB9A41C83A45800C873EE /* WelcomeViewController.xib */; };
+		EB1BB9B11C83ABA900C873EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB9B01C83ABA900C873EE /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67737D326C5D8B9025A898E1 /* Pods-NQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NQuiz/Pods-NQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		6B36D93854154D9106ECDCB4 /* Pods-NQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NQuiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-NQuiz/Pods-NQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		DA49E41BA732ADEE34665E32 /* libPods-NQuiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NQuiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1BB9861C83A41700C873EE /* NQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB1BB9891C83A41700C873EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB1BB98B1C83A41700C873EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB1BB98E1C83A41700C873EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1BB9901C83A41700C873EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EB1BB9931C83A41700C873EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1BB9951C83A41700C873EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1BB99B1C83A45800C873EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB1BB99C1C83A45800C873EE /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EB1BB99D1C83A45800C873EE /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		EB1BB99E1C83A45800C873EE /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		EB1BB99F1C83A45800C873EE /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		EB1BB9A01C83A45800C873EE /* QuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		EB1BB9A11C83A45800C873EE /* ThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksViewController.swift; sourceTree = "<group>"; };
+		EB1BB9A21C83A45800C873EE /* ThanksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThanksViewController.xib; sourceTree = "<group>"; };
+		EB1BB9A31C83A45800C873EE /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		EB1BB9A41C83A45800C873EE /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		EB1BB9AF1C83ABA800C873EE /* NQuiz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NQuiz-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB1BB9B01C83ABA900C873EE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C0E4AF1427DE2E969E53F6 /* libPods-NQuiz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1BEF4901A202669F5527762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA49E41BA732ADEE34665E32 /* libPods-NQuiz.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4324BEDDDD9E066D2A1A685 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67737D326C5D8B9025A898E1 /* Pods-NQuiz.debug.xcconfig */,
+				6B36D93854154D9106ECDCB4 /* Pods-NQuiz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB1BB97D1C83A41700C873EE = {
 			isa = PBXGroup;
 			children = (
 				EB1BB9881C83A41700C873EE /* NQuiz */,
 				EB1BB9871C83A41700C873EE /* Products */,
+				E4324BEDDDD9E066D2A1A685 /* Pods */,
+				B1BEF4901A202669F5527762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +93,20 @@
 		EB1BB9881C83A41700C873EE /* NQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				EB1BB9891C83A41700C873EE /* AppDelegate.swift */,
-				EB1BB98B1C83A41700C873EE /* ViewController.swift */,
-				EB1BB98D1C83A41700C873EE /* Main.storyboard */,
+				EB1BB99B1C83A45800C873EE /* AppDelegate.swift */,
+				EB1BB99C1C83A45800C873EE /* Question.swift */,
+				EB1BB99D1C83A45800C873EE /* QuestionViewController.swift */,
+				EB1BB99E1C83A45800C873EE /* QuestionViewController.xib */,
+				EB1BB99F1C83A45800C873EE /* QuizViewController.swift */,
+				EB1BB9A01C83A45800C873EE /* QuizViewController.xib */,
+				EB1BB9A11C83A45800C873EE /* ThanksViewController.swift */,
+				EB1BB9A21C83A45800C873EE /* ThanksViewController.xib */,
+				EB1BB9A31C83A45800C873EE /* WelcomeViewController.swift */,
+				EB1BB9A41C83A45800C873EE /* WelcomeViewController.xib */,
 				EB1BB9901C83A41700C873EE /* Assets.xcassets */,
-				EB1BB9921C83A41700C873EE /* LaunchScreen.storyboard */,
 				EB1BB9951C83A41700C873EE /* Info.plist */,
+				EB1BB9B01C83ABA900C873EE /* main.m */,
+				EB1BB9AF1C83ABA800C873EE /* NQuiz-Bridging-Header.h */,
 			);
 			path = NQuiz;
 			sourceTree = "<group>";
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB1BB9981C83A41700C873EE /* Build configuration list for PBXNativeTarget "NQuiz" */;
 			buildPhases = (
+				E7AB08663AD27DA9F2AB4007 /* Check Pods Manifest.lock */,
 				EB1BB9821C83A41700C873EE /* Sources */,
 				EB1BB9831C83A41700C873EE /* Frameworks */,
 				EB1BB9841C83A41700C873EE /* Resources */,
+				8CE30C14449B9F129D763F53 /* Embed Pods Frameworks */,
+				21867D2A6A4C1885A23400C5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,44 +172,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1BB9941C83A41700C873EE /* LaunchScreen.storyboard in Resources */,
 				EB1BB9911C83A41700C873EE /* Assets.xcassets in Resources */,
-				EB1BB98F1C83A41700C873EE /* Main.storyboard in Resources */,
+				EB1BB9A81C83A45800C873EE /* QuestionViewController.xib in Resources */,
+				EB1BB9AA1C83A45800C873EE /* QuizViewController.xib in Resources */,
+				EB1BB9AC1C83A45800C873EE /* ThanksViewController.xib in Resources */,
+				EB1BB9AE1C83A45800C873EE /* WelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21867D2A6A4C1885A23400C5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NQuiz/Pods-NQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE30C14449B9F129D763F53 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NQuiz/Pods-NQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AB08663AD27DA9F2AB4007 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB1BB9821C83A41700C873EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1BB98C1C83A41700C873EE /* ViewController.swift in Sources */,
-				EB1BB98A1C83A41700C873EE /* AppDelegate.swift in Sources */,
+				EB1BB9AB1C83A45800C873EE /* ThanksViewController.swift in Sources */,
+				EB1BB9A51C83A45800C873EE /* AppDelegate.swift in Sources */,
+				EB1BB9A61C83A45800C873EE /* Question.swift in Sources */,
+				EB1BB9AD1C83A45800C873EE /* WelcomeViewController.swift in Sources */,
+				EB1BB9A71C83A45800C873EE /* QuestionViewController.swift in Sources */,
+				EB1BB9B11C83ABA900C873EE /* main.m in Sources */,
+				EB1BB9A91C83A45800C873EE /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EB1BB98D1C83A41700C873EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB1BB98E1C83A41700C873EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EB1BB9921C83A41700C873EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB1BB9931C83A41700C873EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EB1BB9961C83A41700C873EE /* Debug */ = {
@@ -247,23 +333,30 @@
 		};
 		EB1BB9991C83A41700C873EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67737D326C5D8B9025A898E1 /* Pods-NQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BaxLabs.NQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NQuiz/NQuiz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EB1BB99A1C83A41700C873EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B36D93854154D9106ECDCB4 /* Pods-NQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BaxLabs.NQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NQuiz/NQuiz-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +379,7 @@
 				EB1BB99A1C83A41700C873EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

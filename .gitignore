@@ -1,0 +1,6 @@
+.DS_Store
+NQuiz.xcodeproj/xcuserdata/
+NQuiz.xcworkspace/xcuserdata/
+DerivedData/
+Pods/
+Build/

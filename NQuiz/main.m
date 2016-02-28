@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import "NQuiz-Swift.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
