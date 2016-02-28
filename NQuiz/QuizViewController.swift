@@ -10,6 +10,7 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    let pageController: UIPageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,11 @@ class QuizViewController: UIViewController {
         let q4 = QuestionViewController(question: .Forth)
         let q5 = QuestionViewController(question: .Fifth)
         
+        pageController.setViewControllers([welcome], direction: .Reverse, animated: true, completion: nil)
 
     }
 }
+
+//extension QuizViewController: UIPageViewControllerDataSource {
+//    
+//}
