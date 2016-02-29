@@ -20,6 +20,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet private weak var buttonOne: UIButton!
     @IBOutlet private weak var buttonTwo: UIButton!
     @IBOutlet private weak var buttonThree: UIButton!
+    @IBOutlet private weak var buttonThreeWidtConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var buttonThreeLeftMarginConstraint: NSLayoutConstraint!
     
     private let question: Question
     
@@ -48,6 +50,8 @@ class QuestionViewController: UIViewController {
             buttonThree.setTitle(options[2], forState: .Normal)
         } else {
             buttonThree.hidden = true
+            buttonThreeWidtConstraint.constant = 0
+            buttonThreeLeftMarginConstraint.constant = 0
         }
     }
     

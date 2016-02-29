@@ -10,6 +10,8 @@
                 <outlet property="backgroundImageView" destination="9Sf-9L-R4a" id="R0q-WQ-VoO"/>
                 <outlet property="buttonOne" destination="tm9-og-jxu" id="O66-vq-1d4"/>
                 <outlet property="buttonThree" destination="ijk-iY-irO" id="r9G-6j-Trv"/>
+                <outlet property="buttonThreeLeftMarginConstraint" destination="vh0-mT-Mhc" id="eQ6-HN-4kW"/>
+                <outlet property="buttonThreeWidtConstraint" destination="wym-O5-xkC" id="4NH-Xm-snH"/>
                 <outlet property="buttonTwo" destination="9Ok-Xk-ySg" id="Alc-Wi-vW4"/>
                 <outlet property="view" destination="MNk-VR-b3S" id="3Mj-91-to5"/>
             </connections>
@@ -78,11 +80,9 @@
                         <constraint firstItem="9Ok-Xk-ySg" firstAttribute="leading" secondItem="tm9-og-jxu" secondAttribute="trailing" constant="30" id="VGD-bu-RtS"/>
                         <constraint firstAttribute="bottom" secondItem="9Ok-Xk-ySg" secondAttribute="bottom" id="Y4q-hv-MLy"/>
                         <constraint firstAttribute="trailing" secondItem="ijk-iY-irO" secondAttribute="trailing" id="ejr-mO-Hmd"/>
-                        <constraint firstItem="ijk-iY-irO" firstAttribute="leading" secondItem="9Ok-Xk-ySg" secondAttribute="trailing" constant="30" id="etW-gn-YL5"/>
                         <constraint firstItem="ijk-iY-irO" firstAttribute="top" secondItem="mlp-ag-AB5" secondAttribute="top" id="gsV-te-ZSS"/>
                         <constraint firstItem="tm9-og-jxu" firstAttribute="leading" secondItem="mlp-ag-AB5" secondAttribute="leading" id="iJg-4r-QwA"/>
                         <constraint firstItem="9Ok-Xk-ySg" firstAttribute="top" secondItem="mlp-ag-AB5" secondAttribute="top" id="oWc-ft-bp4"/>
-                        <constraint firstItem="9Ok-Xk-ySg" firstAttribute="leading" secondItem="tm9-og-jxu" secondAttribute="trailing" constant="30" id="sOq-CR-4ad"/>
                         <constraint firstItem="ijk-iY-irO" firstAttribute="leading" secondItem="9Ok-Xk-ySg" secondAttribute="trailing" constant="30" id="vh0-mT-Mhc"/>
                         <constraint firstAttribute="bottom" secondItem="tm9-og-jxu" secondAttribute="bottom" id="w1T-1R-B8K"/>
                     </constraints>
