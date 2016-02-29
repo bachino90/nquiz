@@ -18,6 +18,10 @@ class WelcomeViewController: UIViewController {
     
     weak var delegate: WelcomeViewControllerDelegate?
     
+    lazy var hideKeyboardGestureRecognizer: UITapGestureRecognizer = {
+        return UITapGestureRecognizer(target: self, action: "hideKeyboard:")
+    }()
+    
     init() {
         super.init(nibName: "WelcomeViewController", bundle: nil)
         view.backgroundColor = UIColor.redColor()   
@@ -27,20 +31,31 @@ class WelcomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func hideKeyboard(gesture: UIGestureRecognizer) {
+        nameTextField.resignFirstResponder()
+    }
+    
     func reset() {
-        nameTextField.text = ""
+        nameTextField.text = "Ingresá tu nombre y apellido"
     }
     
     @IBAction func startButtonTouched(sender: AnyObject) {
-        if let name = nameTextField.text {
+        if let name = nameTextField.text where name != "" && name != "Ingresá tu nombre y apellido" {
+            nameTextField.resignFirstResponder()
             delegate?.welcomeViewController(self, hasStartedWithName: name)
         }
     }
 }
 
 extension WelcomeViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        view.addGestureRecognizer(hideKeyboardGestureRecognizer)
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         nameTextField.resignFirstResponder()
+        view.gestureRecognizers = []
         return true
     }
 }
