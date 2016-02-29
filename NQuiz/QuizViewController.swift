@@ -38,6 +38,7 @@ class QuizViewController: UIViewController {
     }
     
     private func showThanks() {
+        saveParticipant()
         presentViewController(ThanksViewController(), animated: true) { [weak self] in
             if let strongSelf = self {
                 strongSelf.participant = PFObject(className: "Participant")
