@@ -22,6 +22,10 @@ class WelcomeViewController: UIViewController {
         return UITapGestureRecognizer(target: self, action: "hideKeyboard:")
     }()
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     init() {
         super.init(nibName: "WelcomeViewController", bundle: nil)
         view.backgroundColor = UIColor.redColor()   

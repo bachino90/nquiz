@@ -34,6 +34,10 @@ class QuestionViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

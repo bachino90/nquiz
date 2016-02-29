@@ -10,6 +10,10 @@ import UIKit
 
 class ThanksViewController: UIViewController {
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     init() {
         super.init(nibName: "ThanksViewController", bundle: nil)
     }

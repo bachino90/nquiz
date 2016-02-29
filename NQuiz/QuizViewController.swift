@@ -21,6 +21,10 @@ class QuizViewController: UIViewController {
     private let q4 = QuestionViewController(question: .Forth)
     private let q5 = QuestionViewController(question: .Fifth)
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pageController.setViewControllers([welcome], direction: .Forward, animated: true, completion: nil)
