@@ -8,21 +8,32 @@
 
 import UIKit
 
+protocol WelcomeViewControllerDelegate: class {
+    func welcomeViewController(welcomeViewController: WelcomeViewController, hasStartedWithName name: String)
+}
+
 class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     
+    weak var delegate: WelcomeViewControllerDelegate?
+    
     init() {
         super.init(nibName: "WelcomeViewController", bundle: nil)
+        view.backgroundColor = UIColor.redColor()   
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func reset() {
+        nameTextField.text = ""
+    }
+    
     @IBAction func startButtonTouched(sender: AnyObject) {
-        if let _ = nameTextField.text {
-            
+        if let name = nameTextField.text {
+            delegate?.welcomeViewController(self, hasStartedWithName: name)
         }
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -33,8 +33,11 @@
                                 <constraint firstAttribute="height" constant="150" id="ciq-QM-JgI"/>
                             </constraints>
                             <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="optionButtonTouched:" destination="-1" eventType="touchUpInside" id="UzY-Tt-GcW"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-Xk-ySg">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-Xk-ySg">
                             <rect key="frame" x="180" y="0.0" width="150" height="150"/>
                             <color key="backgroundColor" red="1" green="0.38346868740000001" blue="0.51092000979999996" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -42,8 +45,11 @@
                                 <constraint firstAttribute="width" constant="150" id="hvi-y2-F7f"/>
                             </constraints>
                             <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="optionButtonTouched:" destination="-1" eventType="touchUpInside" id="cxV-bW-O1f"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijk-iY-irO">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijk-iY-irO">
                             <rect key="frame" x="360" y="0.0" width="150" height="150"/>
                             <color key="backgroundColor" red="1" green="0.38346868740000001" blue="0.51092000979999996" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -51,6 +57,9 @@
                                 <constraint firstAttribute="width" constant="150" id="wym-O5-xkC"/>
                             </constraints>
                             <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="optionButtonTouched:" destination="-1" eventType="touchUpInside" id="6N4-kj-Dsj"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

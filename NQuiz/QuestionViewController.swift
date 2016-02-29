@@ -8,9 +8,13 @@
 
 import UIKit
 
-
+protocol QuestionViewControllerDelegate: class {
+    func questionViewController(questionViewController: QuestionViewController, hasAnswered answer: String, forQuestion question: Question)
+}
 
 class QuestionViewController: UIViewController {
+    
+    weak var delegate: QuestionViewControllerDelegate?
     
     @IBOutlet private weak var backgroundImageView: UIImageView!
     @IBOutlet private weak var buttonOne: UIButton!
@@ -39,5 +43,10 @@ class QuestionViewController: UIViewController {
         } else {
             buttonThree.hidden = true
         }
+    }
+    
+    @IBAction func optionButtonTouched(sender: UIButton) {
+        let optionSelected = question.options[sender.tag]
+        delegate?.questionViewController(self, hasAnswered: optionSelected, forQuestion: question)
     }
 }

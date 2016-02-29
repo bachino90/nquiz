@@ -20,6 +20,7 @@
 		EB1BB9AD1C83A45800C873EE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB9A31C83A45800C873EE /* WelcomeViewController.swift */; };
 		EB1BB9AE1C83A45800C873EE /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1BB9A41C83A45800C873EE /* WelcomeViewController.xib */; };
 		EB1BB9B11C83ABA900C873EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB9B01C83ABA900C873EE /* main.m */; };
+		EB4A8B8F1C83E53200AA6321 /* MiscUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4A8B8E1C83E53200AA6321 /* MiscUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		EB1BB9A41C83A45800C873EE /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		EB1BB9AF1C83ABA800C873EE /* NQuiz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NQuiz-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB1BB9B01C83ABA900C873EE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB4A8B8D1C83E53200AA6321 /* MiscUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscUtils.h; sourceTree = "<group>"; };
+		EB4A8B8E1C83E53200AA6321 /* MiscUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				EB1BB9A21C83A45800C873EE /* ThanksViewController.xib */,
 				EB1BB9A31C83A45800C873EE /* WelcomeViewController.swift */,
 				EB1BB9A41C83A45800C873EE /* WelcomeViewController.xib */,
+				EB4A8B8D1C83E53200AA6321 /* MiscUtils.h */,
+				EB4A8B8E1C83E53200AA6321 /* MiscUtils.m */,
 				EB1BB9901C83A41700C873EE /* Assets.xcassets */,
 				EB1BB9951C83A41700C873EE /* Info.plist */,
 				EB1BB9B01C83ABA900C873EE /* main.m */,
@@ -238,6 +243,7 @@
 				EB1BB9AB1C83A45800C873EE /* ThanksViewController.swift in Sources */,
 				EB1BB9A51C83A45800C873EE /* AppDelegate.swift in Sources */,
 				EB1BB9A61C83A45800C873EE /* Question.swift in Sources */,
+				EB4A8B8F1C83E53200AA6321 /* MiscUtils.m in Sources */,
 				EB1BB9AD1C83A45800C873EE /* WelcomeViewController.swift in Sources */,
 				EB1BB9A71C83A45800C873EE /* QuestionViewController.swift in Sources */,
 				EB1BB9B11C83ABA900C873EE /* main.m in Sources */,

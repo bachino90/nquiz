@@ -25,6 +25,16 @@ enum Question {
         }
     }
     
+    var column: String {
+        switch self {
+        case .First: return "question1"
+        case .Second: return "question2"
+        case .Third: return "question3"
+        case .Forth: return "question4"
+        case .Fifth: return "question5"
+        }
+    }
+    
     var title: String {
         switch self {
         case .First: return "¿Cómo identificarías el tipo de tu piel?"

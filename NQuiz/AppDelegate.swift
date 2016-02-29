@@ -12,28 +12,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
         let quizVC = QuizViewController()
         quizVC.view.backgroundColor = UIColor.whiteColor()
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = quizVC
         window?.makeKeyAndVisible()
         
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios/guide#local-datastore
-        Parse.enableLocalDatastore()
+//        Parse.enableLocalDatastore()
         
-        // Initialize Parse.
-        Parse.setApplicationId("XZXbogEx2eXl8SGNivbYrWLyH9iEvVh1INESBMDU",
-            clientKey: "Iw7tyBV6LdUgQe7M7ejwhrOpW5eaOsZdgHplfh4X")
-        
-//        let testObject = PFObject(className: "Participant")
-//        testObject["name"] = "bar"
-//        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-//            print("Object has been saved.")
-//        }
-        
+//        Parse.setApplicationId("XZXbogEx2eXl8SGNivbYrWLyH9iEvVh1INESBMDU",
+//            clientKey: "Iw7tyBV6LdUgQe7M7ejwhrOpW5eaOsZdgHplfh4X")
+    
         return true
     }
 
