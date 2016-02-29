@@ -15,11 +15,6 @@ class QuizViewController: UIViewController {
     private var participant = PFObject(className: "Participant")
     
     private let welcome = WelcomeViewController()
-    private let q1 = QuestionViewController(question: .First)
-    private let q2 = QuestionViewController(question: .Second)
-    private let q3 = QuestionViewController(question: .Third)
-    private let q4 = QuestionViewController(question: .Forth)
-    private let q5 = QuestionViewController(question: .Fifth)
     
     override func prefersStatusBarHidden() -> Bool {
         return true
