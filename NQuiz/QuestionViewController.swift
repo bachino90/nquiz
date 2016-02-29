@@ -34,8 +34,14 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let options = question.options
         
+        buttonOne.layer.cornerRadius = buttonOne.frame.width/2
+        buttonTwo.layer.cornerRadius = buttonTwo.frame.width/2
+        buttonThree.layer.cornerRadius = buttonThree.frame.width/2
+        
+        backgroundImageView.image = question.image
+        
+        let options = question.options
         buttonOne.setTitle(options[0], forState: .Normal)
         buttonTwo.setTitle(options[1], forState: .Normal)
         if options.count == 3 {

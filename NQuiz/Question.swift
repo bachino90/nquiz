@@ -35,6 +35,10 @@ enum Question {
         }
     }
     
+    var image: UIImage? {
+        return UIImage(named: column)
+    }
+    
     var title: String {
         switch self {
         case .First: return "¿Cómo identificarías el tipo de tu piel?"
@@ -42,6 +46,16 @@ enum Question {
         case .Third: return "¿Notás en tu piel la presencia de manchas leves u oscuras?"
         case .Forth: return "¿Cuál es para vos la duración ideal de la base?"
         case .Fifth: return "¿Buscás que la base brinde tratamiento antiseñales?"
+        }
+    }
+    
+    var next: Question? {
+        switch self {
+        case .First: return .Second
+        case .Second: return .Third
+        case .Third: return .Forth
+        case .Forth: return .Fifth
+        case .Fifth: return nil
         }
     }
 }

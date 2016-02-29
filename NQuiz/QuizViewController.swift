@@ -23,22 +23,23 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pageController.setViewControllers([welcome], direction: .Reverse, animated: true, completion: nil)
+        pageController.setViewControllers([welcome], direction: .Forward, animated: true, completion: nil)
         addChildViewController(pageController)
         view.addSubview(pageController.view)
         view.clipsToBounds = true
         MiscUtils.addConstraintsToMatchItsSuperView(pageController.view)
         pageController.didMoveToParentViewController(self)
+        
+        welcome.delegate = self
     }
     
-    private func resetQuiz() {
+    private func showThanks() {
         presentViewController(ThanksViewController(), animated: true) { [weak self] in
             if let strongSelf = self {
                 strongSelf.participant = PFObject(className: "Participant")
                 strongSelf.welcome.reset()
                 strongSelf.pageController.setViewControllers([strongSelf.welcome], direction: .Reverse, animated: false, completion: nil)
             }
-            
         }
     }
     
@@ -48,22 +49,27 @@ class QuizViewController: UIViewController {
         }
     }
     
-    private func indexChangeBlock(index: Int) {
-        let vc = QuestionViewController(question: .First)
-        pageController.setViewControllers([vc], direction: .Reverse, animated: true, completion: nil)
+    private func indexChangeBlock(next: Question) {
+        let vc = QuestionViewController(question: next)
+        vc.delegate = self
+        pageController.setViewControllers([vc], direction: .Forward, animated: true, completion: nil)
     }
 }
 
 extension QuizViewController: QuestionViewControllerDelegate {
     func questionViewController(questionViewController: QuestionViewController, hasAnswered answer: String, forQuestion question: Question) {
         participant[question.column] = answer
-        // pasar al siguiente
+        if let next = question.next {
+            indexChangeBlock(next)
+        } else {
+            showThanks()
+        }
     }
 }
 
 extension QuizViewController: WelcomeViewControllerDelegate {
     func welcomeViewController(welcomeViewController: WelcomeViewController, hasStartedWithName name: String) {
         participant["name"] = name
-        // pasar al siguiente
+        indexChangeBlock(.First)
     }
 }

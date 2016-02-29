@@ -37,3 +37,10 @@ class WelcomeViewController: UIViewController {
         }
     }
 }
+
+extension WelcomeViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        nameTextField.resignFirstResponder()
+        return true
+    }
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -12,10 +12,36 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="yG1-hC-dEQ">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thanks" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-B7-prQ">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULx-8H-U4O">
+                    <rect key="frame" x="319" y="652" width="130" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="29l-7a-exx"/>
+                        <constraint firstAttribute="height" constant="130" id="jSD-Wd-Haq"/>
+                    </constraints>
+                    <connections>
+                        <action selector="startAgainButtonTouched:" destination="-1" eventType="touchUpInside" id="iim-uK-Ifz"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ULx-8H-U4O" firstAttribute="centerX" secondItem="yG1-hC-dEQ" secondAttribute="centerX" id="6c0-5y-hoV"/>
+                <constraint firstAttribute="trailing" secondItem="Etb-B7-prQ" secondAttribute="trailing" id="RDh-8q-HpG"/>
+                <constraint firstItem="Etb-B7-prQ" firstAttribute="top" secondItem="yG1-hC-dEQ" secondAttribute="top" id="XFB-jb-OhV"/>
+                <constraint firstAttribute="bottom" secondItem="Etb-B7-prQ" secondAttribute="bottom" id="XYI-vY-Fvr"/>
+                <constraint firstItem="ULx-8H-U4O" firstAttribute="centerY" secondItem="yG1-hC-dEQ" secondAttribute="centerY" constant="205" id="pge-rN-eNk"/>
+                <constraint firstItem="Etb-B7-prQ" firstAttribute="leading" secondItem="yG1-hC-dEQ" secondAttribute="leading" id="szf-Ht-Prv"/>
+            </constraints>
             <point key="canvasLocation" x="242" y="411"/>
         </view>
     </objects>
+    <resources>
+        <image name="thanks" width="768" height="1024"/>
+    </resources>
 </document>
