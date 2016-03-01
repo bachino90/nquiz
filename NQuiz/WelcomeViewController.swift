@@ -55,6 +55,9 @@ extension WelcomeViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(textField: UITextField) {
         view.addGestureRecognizer(hideKeyboardGestureRecognizer)
+        if let name = nameTextField.text where name == "Ingresá tu nombre y apellido" {
+            nameTextField.text = ""
+        }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
