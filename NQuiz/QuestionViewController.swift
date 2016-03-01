@@ -17,6 +17,7 @@ class QuestionViewController: UIViewController {
     weak var delegate: QuestionViewControllerDelegate?
     
     @IBOutlet private weak var backgroundImageView: UIImageView!
+    @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var buttonOne: UIButton!
     @IBOutlet private weak var buttonTwo: UIButton!
     @IBOutlet private weak var buttonThree: UIButton!
@@ -41,6 +42,7 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        questionLabel.text = question.title
         buttonOne.layer.cornerRadius = buttonOne.frame.width/2
         buttonTwo.layer.cornerRadius = buttonTwo.frame.width/2
         buttonThree.layer.cornerRadius = buttonThree.frame.width/2
@@ -48,10 +50,14 @@ class QuestionViewController: UIViewController {
         backgroundImageView.image = question.image
         
         let options = question.options
+        let colors = question.colors
         buttonOne.setTitle(options[0], forState: .Normal)
+        buttonOne.backgroundColor = colors[0]
         buttonTwo.setTitle(options[1], forState: .Normal)
+        buttonTwo.backgroundColor = colors[1]
         if options.count == 3 {
             buttonThree.setTitle(options[2], forState: .Normal)
+            buttonThree.backgroundColor = colors[2]
         } else {
             buttonThree.hidden = true
             buttonThreeWidtConstraint.constant = 0

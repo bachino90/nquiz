@@ -17,11 +17,22 @@ enum Question {
     
     var options: [String] {
         switch self {
-        case .First: return ["Mixta a oleosa", "Normal", "Normal a seca"]
-        case .Second: return ["Clara", "Media", "Castaña"]
-        case .Third: return ["Si", "No"]
-        case .Forth: return ["Corta", "Media", "Larga"]
-        case .Fifth: return ["Si", "No"]
+        case .First: return ["Normal a oleosa", "Normal", "Normal a seca"]
+        case .Second: return ["Clara", "Media", "Castaño"]
+        case .Third: return ["SI", "NO"]
+        case .Forth: return ["Baja", "Media", "Larga"]
+        case .Fifth: return ["SI", "NO"]
+        }
+    }
+    
+    var colors: [UIColor] {
+        switch self {
+        case .Second: return [
+            UIColor(red: 248/255.0, green: 223/255.0, blue: 195/255.0, alpha: 1),
+            UIColor(red: 236/255.0, green: 184/255.0, blue: 134/255.0, alpha: 1),
+            UIColor(red: 203/255.0, green: 149/255.0, blue: 96/255.0, alpha: 1)
+            ]
+        default: return [UIColor.whiteColor(), UIColor.whiteColor(), UIColor.whiteColor()]
         }
     }
     
@@ -41,8 +52,8 @@ enum Question {
     
     var title: String {
         switch self {
-        case .First: return "¿Cómo identificarías el tipo de tu piel?"
-        case .Second: return "¿Cuál es el tono de tu piel?"
+        case .First: return "¿Cómo identificás el tipo de tu piel?"
+        case .Second: return "¿Cuál es tu tono de piel?"
         case .Third: return "¿Notás en tu piel la presencia de manchas leves u oscuras?"
         case .Forth: return "¿Cuál es para vos la duración ideal de la base?"
         case .Fifth: return "¿Buscás que la base brinde tratamiento antiseñales?"

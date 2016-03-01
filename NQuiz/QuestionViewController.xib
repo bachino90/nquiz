@@ -13,6 +13,7 @@
                 <outlet property="buttonThreeLeftMarginConstraint" destination="vh0-mT-Mhc" id="eQ6-HN-4kW"/>
                 <outlet property="buttonThreeWidtConstraint" destination="wym-O5-xkC" id="4NH-Xm-snH"/>
                 <outlet property="buttonTwo" destination="9Ok-Xk-ySg" id="Alc-Wi-vW4"/>
+                <outlet property="questionLabel" destination="mfv-gM-XfL" id="Jaq-LL-Nky"/>
                 <outlet property="view" destination="MNk-VR-b3S" id="3Mj-91-to5"/>
             </connections>
         </placeholder>
@@ -25,14 +26,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlp-ag-AB5">
-                    <rect key="frame" x="129" y="617" width="510" height="150"/>
+                    <rect key="frame" x="114" y="612" width="540" height="160"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tm9-og-jxu">
-                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="150" id="Tup-nA-jHV"/>
-                                <constraint firstAttribute="height" constant="150" id="ciq-QM-JgI"/>
+                                <constraint firstAttribute="width" constant="160" id="Tup-nA-jHV"/>
+                                <constraint firstAttribute="height" constant="160" id="ciq-QM-JgI"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="22"/>
                             <state key="normal" title="Button">
@@ -43,11 +44,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-Xk-ySg">
-                            <rect key="frame" x="180" y="0.0" width="150" height="150"/>
+                            <rect key="frame" x="190" y="0.0" width="160" height="160"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="150" id="LYw-5x-M8M"/>
-                                <constraint firstAttribute="width" constant="150" id="hvi-y2-F7f"/>
+                                <constraint firstAttribute="height" constant="160" id="LYw-5x-M8M"/>
+                                <constraint firstAttribute="width" constant="160" id="hvi-y2-F7f"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="22"/>
                             <state key="normal" title="Button">
@@ -58,11 +59,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijk-iY-irO">
-                            <rect key="frame" x="360" y="0.0" width="150" height="150"/>
+                            <rect key="frame" x="380" y="0.0" width="160" height="160"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="150" id="ovx-s5-UNX"/>
-                                <constraint firstAttribute="width" constant="150" id="wym-O5-xkC"/>
+                                <constraint firstAttribute="height" constant="160" id="ovx-s5-UNX"/>
+                                <constraint firstAttribute="width" constant="160" id="wym-O5-xkC"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="22"/>
                             <state key="normal" title="Button">
@@ -87,12 +88,23 @@
                         <constraint firstAttribute="bottom" secondItem="tm9-og-jxu" secondAttribute="bottom" id="w1T-1R-B8K"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?Cual es para vos la duración ideal de la base?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfv-gM-XfL">
+                    <rect key="frame" x="147" y="319" width="475" height="236"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="475" id="sVg-P1-HOm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="69"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="mlp-ag-AB5" firstAttribute="centerY" secondItem="MNk-VR-b3S" secondAttribute="centerY" constant="180" id="2PA-eY-feR"/>
                 <constraint firstItem="9Sf-9L-R4a" firstAttribute="top" secondItem="MNk-VR-b3S" secondAttribute="top" id="Km8-WY-bVn"/>
                 <constraint firstAttribute="trailing" secondItem="9Sf-9L-R4a" secondAttribute="trailing" id="cQm-58-q7f"/>
+                <constraint firstItem="mfv-gM-XfL" firstAttribute="centerX" secondItem="MNk-VR-b3S" secondAttribute="centerX" id="gwE-R3-j8t"/>
+                <constraint firstItem="mfv-gM-XfL" firstAttribute="centerY" secondItem="MNk-VR-b3S" secondAttribute="centerY" constant="-75" id="i0A-zH-4AK"/>
                 <constraint firstItem="9Sf-9L-R4a" firstAttribute="leading" secondItem="MNk-VR-b3S" secondAttribute="leading" id="p1F-JT-06r"/>
                 <constraint firstAttribute="bottom" secondItem="9Sf-9L-R4a" secondAttribute="bottom" id="sCE-g0-SYQ"/>
                 <constraint firstItem="mlp-ag-AB5" firstAttribute="centerX" secondItem="MNk-VR-b3S" secondAttribute="centerX" id="vmh-jB-NTB"/>
