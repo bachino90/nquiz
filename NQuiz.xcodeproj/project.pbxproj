@@ -22,6 +22,7 @@
 		EB1BB9B11C83ABA900C873EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1BB9B01C83ABA900C873EE /* main.m */; };
 		EB4A8B8F1C83E53200AA6321 /* MiscUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4A8B8E1C83E53200AA6321 /* MiscUtils.m */; };
 		EB57FAFD1C86604500988E42 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57FAFC1C86604500988E42 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EB57FAFF1C87351200988E42 /* AltQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB57FAFE1C87351200988E42 /* AltQuestionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		EB4A8B8E1C83E53200AA6321 /* MiscUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscUtils.m; sourceTree = "<group>"; };
 		EB57FAFA1C865FFF00988E42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB57FAFC1C86604500988E42 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EB57FAFE1C87351200988E42 /* AltQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AltQuestionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EB1BB99C1C83A45800C873EE /* Question.swift */,
 				EB1BB99D1C83A45800C873EE /* QuestionViewController.swift */,
 				EB1BB99E1C83A45800C873EE /* QuestionViewController.xib */,
+				EB57FAFE1C87351200988E42 /* AltQuestionViewController.xib */,
 				EB1BB99F1C83A45800C873EE /* QuizViewController.swift */,
 				EB1BB9A01C83A45800C873EE /* QuizViewController.xib */,
 				EB1BB9A11C83A45800C873EE /* ThanksViewController.swift */,
@@ -186,6 +189,7 @@
 			files = (
 				EB1BB9911C83A41700C873EE /* Assets.xcassets in Resources */,
 				EB1BB9A81C83A45800C873EE /* QuestionViewController.xib in Resources */,
+				EB57FAFF1C87351200988E42 /* AltQuestionViewController.xib in Resources */,
 				EB1BB9AA1C83A45800C873EE /* QuizViewController.xib in Resources */,
 				EB1BB9AC1C83A45800C873EE /* ThanksViewController.xib in Resources */,
 				EB1BB9AE1C83A45800C873EE /* WelcomeViewController.xib in Resources */,

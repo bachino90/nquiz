@@ -26,13 +26,13 @@ enum Question {
     }
     
     var colors: [UIColor] {
+        return [UIColor.whiteColor(), UIColor.whiteColor(), UIColor.whiteColor()]
+    }
+    
+    var viewControllerNibName: String {
         switch self {
-        case .Second: return [
-            UIColor(red: 248/255.0, green: 223/255.0, blue: 195/255.0, alpha: 1),
-            UIColor(red: 236/255.0, green: 184/255.0, blue: 134/255.0, alpha: 1),
-            UIColor(red: 203/255.0, green: 149/255.0, blue: 96/255.0, alpha: 1)
-            ]
-        default: return [UIColor.whiteColor(), UIColor.whiteColor(), UIColor.whiteColor()]
+        case .Second: return "AltQuestionViewController"
+        default: return "QuestionViewController"
         }
     }
     

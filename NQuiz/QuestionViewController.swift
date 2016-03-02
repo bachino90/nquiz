@@ -23,12 +23,13 @@ class QuestionViewController: UIViewController {
     @IBOutlet private weak var buttonThree: UIButton!
     @IBOutlet private weak var buttonThreeWidtConstraint: NSLayoutConstraint!
     @IBOutlet private weak var buttonThreeLeftMarginConstraint: NSLayoutConstraint!
+    @IBOutlet private var colorPaletViews: [UIView]!
     
     private let question: Question
     
     init(question: Question) {
         self.question = question
-        super.init(nibName: "QuestionViewController", bundle: nil)
+        super.init(nibName: question.viewControllerNibName, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -46,6 +47,9 @@ class QuestionViewController: UIViewController {
         buttonOne.layer.cornerRadius = buttonOne.frame.width/2
         buttonTwo.layer.cornerRadius = buttonTwo.frame.width/2
         buttonThree.layer.cornerRadius = buttonThree.frame.width/2
+        for view in (colorPaletViews ?? []) {
+            view.layer.cornerRadius = view.frame.width/2
+        }
         
         backgroundImageView.image = question.image
         
