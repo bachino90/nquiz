@@ -13,7 +13,16 @@ class Game {
     
     var answer: String? {
         if responses.count == 5 {
-            return ""
+            if responses[.First] == "Normal a oleosa" && responses[.Second] == "Mate" && responses[.Third] == "No es el principal beneficio buscado" && responses[.Forth] == "No" && responses[.Fifth] == "No" {
+               return CountryManager.sharedManager.selectedCountry?.matificName
+            }
+            if responses[.First] == "Normal a seca" && responses[.Second] == "Satinado" && responses[.Third] == "Al menos 12hs" && responses[.Forth] == "No" && responses[.Fifth] == "No" {
+                return CountryManager.sharedManager.selectedCountry?.radianceName
+            }
+            if responses[.First] == "Normal a seca" && responses[.Second] == "Satinado" && responses[.Third] == "No es el principal beneficio buscado" && responses[.Forth] == "No" && responses[.Fifth] == "No" {
+                return CountryManager.sharedManager.selectedCountry?.radianceName
+            }
+            return CountryManager.sharedManager.selectedCountry?.baseLiquidaName
         }
         return nil
     }

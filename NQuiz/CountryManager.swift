@@ -13,7 +13,7 @@ let countryKey = "com.nquiz.country"
 class CountryManager {
     
     static let sharedManager = CountryManager()
-    
+    var selectedCountry: Country? { return Country(rawValue: self.country ?? "") }
     var country: String? {
         didSet {
             if let countryName = country {
