@@ -14,7 +14,7 @@ class ThanksViewController: UIViewController {
         return true
     }
     
-    init() {
+    init(answer: String) {
         super.init(nibName: "ThanksViewController", bundle: nil)
     }
     

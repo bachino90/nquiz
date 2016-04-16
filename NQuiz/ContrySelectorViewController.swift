@@ -18,6 +18,48 @@ enum Country: String {
     case Paraguay = "Paraguay"
     case Colombia = "Colombia"
     case Venezuela = "Venezuela"
+    
+    var baseLiquidaName: String {
+        switch self {
+        case .Argentina: return "Base Liquida"
+        case .Chile: return ""
+        case .Uruguay: return ""
+        case .Brasil: return ""
+        case .Peru: return ""
+        case .Bolivia: return ""
+        case .Paraguay: return ""
+        case .Colombia: return ""
+        case .Venezuela: return ""
+        }
+    }
+    
+    var matificName: String {
+        switch self {
+        case .Argentina: return "Matific"
+        case .Chile: return ""
+        case .Uruguay: return ""
+        case .Brasil: return ""
+        case .Peru: return ""
+        case .Bolivia: return ""
+        case .Paraguay: return ""
+        case .Colombia: return ""
+        case .Venezuela: return ""
+        }
+    }
+    
+    var radianceName: String {
+        switch self {
+        case .Argentina: return "Radiance"
+        case .Chile: return ""
+        case .Uruguay: return ""
+        case .Brasil: return ""
+        case .Peru: return ""
+        case .Bolivia: return ""
+        case .Paraguay: return ""
+        case .Colombia: return ""
+        case .Venezuela: return ""
+        }
+    }
 }
 
 protocol CountrySelectorViewControllerDelegate: class {

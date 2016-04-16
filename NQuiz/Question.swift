@@ -10,6 +10,13 @@ import Foundation
 
 class Game {
     var responses: [Question: String] = [:]
+    
+    var answer: String? {
+        if responses.count == 5 {
+            return ""
+        }
+        return nil
+    }
 }
 
 enum Question {
