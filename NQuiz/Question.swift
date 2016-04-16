@@ -8,6 +8,10 @@
 
 import Foundation
 
+class Game {
+    var responses: [Question: String] = [:]
+}
+
 enum Question {
     case First
     case Second

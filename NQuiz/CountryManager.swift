@@ -14,7 +14,13 @@ class CountryManager {
     
     static let sharedManager = CountryManager()
     
-    let country: String?
+    var country: String? {
+        didSet {
+            if let countryName = country {
+                saveCountry(countryName)
+            }
+        }
+    }
     
     init() {
         country = NSUserDefaults.standardUserDefaults().objectForKey(countryKey) as? String

@@ -21,17 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = quizVC
         window?.makeKeyAndVisible()
         
-        if CountryManager.sharedManager.country == nil {
-            let countrySelectorVC = CountrySelectorViewController()
-            quizVC.presentViewController(countrySelectorVC, animated: true, completion: nil)
-        }
-        
-        // [Optional] Power your app with Local Datastore. For more info, go to
-        // https://parse.com/docs/ios/guide#local-datastore
-        Parse.enableLocalDatastore()
-        
-        Parse.setApplicationId("XZXbogEx2eXl8SGNivbYrWLyH9iEvVh1INESBMDU", clientKey: "Iw7tyBV6LdUgQe7M7ejwhrOpW5eaOsZdgHplfh4X")
-        
+//        // [Optional] Power your app with Local Datastore. For more info, go to
+//        // https://parse.com/docs/ios/guide#local-datastore
+//        Parse.enableLocalDatastore()
+//        
+//        Parse.setApplicationId("XZXbogEx2eXl8SGNivbYrWLyH9iEvVh1INESBMDU", clientKey: "Iw7tyBV6LdUgQe7M7ejwhrOpW5eaOsZdgHplfh4X")
+//        
         return true
     }
 
