@@ -19,7 +19,7 @@ class WelcomeViewController: UIViewController {
     weak var delegate: WelcomeViewControllerDelegate?
     
     lazy var hideKeyboardGestureRecognizer: UITapGestureRecognizer = {
-        return UITapGestureRecognizer(target: self, action: "hideKeyboard:")
+        return UITapGestureRecognizer(target: self, action: #selector(WelcomeViewController.hideKeyboard(_:)))
     }()
     
     override func prefersStatusBarHidden() -> Bool {

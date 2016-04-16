@@ -18,7 +18,7 @@ enum Question {
     var options: [String] {
         switch self {
         case .First: return ["Normal a oleosa", "Normal", "Normal a seca"]
-        case .Second: return ["Clara", "Media", "Castaño"]
+        case .Second: return ["Claro", "Medio", "Castaño"]
         case .Third: return ["SI", "NO"]
         case .Forth: return ["Baja", "Media", "Larga"]
         case .Fifth: return ["SI", "NO"]

@@ -24,7 +24,7 @@ class ThanksViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        performSelector("dismissMe", withObject: nil, afterDelay: 5.0)
+        performSelector(#selector(ThanksViewController.dismissMe), withObject: nil, afterDelay: 5.0)
     }
     
     func dismissMe() {
