@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThanksViewController" customModule="NQuiz" customModuleProvider="target">
             <connections>
-                <outlet property="answerLabel" destination="WF2-lE-tAY" id="JEl-ty-4hg"/>
+                <outlet property="backgroundImageView" destination="Etb-B7-prQ" id="cSd-9z-PFT"/>
                 <outlet property="view" destination="yG1-hC-dEQ" id="szS-6G-bhF"/>
             </connections>
         </placeholder>
@@ -16,11 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thanks" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-B7-prQ">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiance_argentina" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-B7-prQ">
                     <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULx-8H-U4O">
-                    <rect key="frame" x="319" y="652" width="130" height="130"/>
+                    <rect key="frame" x="319" y="852" width="130" height="130"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="130" id="29l-7a-exx"/>
                         <constraint firstAttribute="height" constant="130" id="jSD-Wd-Haq"/>
@@ -29,28 +29,20 @@
                         <action selector="startAgainButtonTouched:" destination="-1" eventType="touchUpInside" id="iim-uK-Ifz"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF2-lE-tAY">
-                    <rect key="frame" x="348" y="264" width="73" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="ULx-8H-U4O" firstAttribute="centerX" secondItem="yG1-hC-dEQ" secondAttribute="centerX" id="6c0-5y-hoV"/>
-                <constraint firstItem="WF2-lE-tAY" firstAttribute="centerX" secondItem="yG1-hC-dEQ" secondAttribute="centerX" id="Mxg-XQ-2Mb"/>
                 <constraint firstAttribute="trailing" secondItem="Etb-B7-prQ" secondAttribute="trailing" id="RDh-8q-HpG"/>
                 <constraint firstItem="Etb-B7-prQ" firstAttribute="top" secondItem="yG1-hC-dEQ" secondAttribute="top" id="XFB-jb-OhV"/>
                 <constraint firstAttribute="bottom" secondItem="Etb-B7-prQ" secondAttribute="bottom" id="XYI-vY-Fvr"/>
-                <constraint firstItem="WF2-lE-tAY" firstAttribute="top" secondItem="yG1-hC-dEQ" secondAttribute="top" constant="264" id="aia-XG-Wvx"/>
-                <constraint firstItem="ULx-8H-U4O" firstAttribute="centerY" secondItem="yG1-hC-dEQ" secondAttribute="centerY" constant="205" id="pge-rN-eNk"/>
+                <constraint firstItem="ULx-8H-U4O" firstAttribute="centerY" secondItem="yG1-hC-dEQ" secondAttribute="centerY" constant="405" id="pge-rN-eNk"/>
                 <constraint firstItem="Etb-B7-prQ" firstAttribute="leading" secondItem="yG1-hC-dEQ" secondAttribute="leading" id="szf-Ht-Prv"/>
             </constraints>
             <point key="canvasLocation" x="242" y="411"/>
         </view>
     </objects>
     <resources>
-        <image name="thanks" width="768" height="1024"/>
+        <image name="radiance_argentina" width="768" height="1024"/>
     </resources>
 </document>

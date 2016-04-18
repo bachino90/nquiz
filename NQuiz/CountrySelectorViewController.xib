@@ -15,51 +15,55 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sua-J1-ZTP">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="country_selector" translatesAutoresizingMaskIntoConstraints="NO" id="sua-J1-ZTP">
                     <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjE-Jk-kWe">
-                    <rect key="frame" x="309" y="497" width="150" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="150" id="hsV-86-Skh"/>
-                    </constraints>
+                <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjE-Jk-kWe">
+                    <rect key="frame" x="216" y="649" width="93" height="94"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Argentina"/>
                     <connections>
                         <action selector="selectedCountry:" destination="-1" eventType="touchUpInside" id="GD5-mH-ZAl"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSn-41-DOC">
-                    <rect key="frame" x="309" y="535" width="150" height="30"/>
+                <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-55-yI2">
+                    <rect key="frame" x="338" y="649" width="93" height="94"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Chile"/>
+                    <connections>
+                        <action selector="selectedCountry:" destination="-1" eventType="touchUpInside" id="q3V-Fi-4hE"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu3-hb-N7p">
-                    <rect key="frame" x="309" y="573" width="150" height="30"/>
+                <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSO-pv-CdF">
+                    <rect key="frame" x="460" y="649" width="93" height="94"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Colombia"/>
+                    <connections>
+                        <action selector="selectedCountry:" destination="-1" eventType="touchUpInside" id="hmr-Jb-g9Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OU1-J1-TWI">
+                    <rect key="frame" x="283" y="746" width="93" height="94"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Peru"/>
+                    <connections>
+                        <action selector="selectedCountry:" destination="-1" eventType="touchUpInside" id="f5m-zV-0Lp"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAU-vf-yqF">
-                    <rect key="frame" x="309" y="611" width="150" height="30"/>
-                    <state key="normal" title="Brasil"/>
+                <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je3-4O-NIt">
+                    <rect key="frame" x="406" y="746" width="93" height="94"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Mexico"/>
+                    <connections>
+                        <action selector="selectedCountry:" destination="-1" eventType="touchUpInside" id="Ef0-KI-Gen"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="IAU-vf-yqF" firstAttribute="trailing" secondItem="Qu3-hb-N7p" secondAttribute="trailing" id="5y1-ck-V9K"/>
-                <constraint firstAttribute="bottom" secondItem="sua-J1-ZTP" secondAttribute="bottom" id="6qe-yR-NQx"/>
-                <constraint firstItem="IAU-vf-yqF" firstAttribute="leading" secondItem="Qu3-hb-N7p" secondAttribute="leading" id="9fK-YX-ndZ"/>
-                <constraint firstItem="sua-J1-ZTP" firstAttribute="leading" secondItem="jTq-qh-MLj" secondAttribute="leading" id="BTN-ed-cJT"/>
-                <constraint firstItem="sua-J1-ZTP" firstAttribute="top" secondItem="jTq-qh-MLj" secondAttribute="top" id="DoG-po-ZGu"/>
-                <constraint firstItem="Qu3-hb-N7p" firstAttribute="top" secondItem="MSn-41-DOC" secondAttribute="bottom" constant="8" id="E7H-wh-i43"/>
-                <constraint firstItem="Qu3-hb-N7p" firstAttribute="leading" secondItem="MSn-41-DOC" secondAttribute="leading" id="On6-uy-mLv"/>
-                <constraint firstItem="IAU-vf-yqF" firstAttribute="top" secondItem="Qu3-hb-N7p" secondAttribute="bottom" constant="8" id="eEb-1Y-nx1"/>
-                <constraint firstItem="rjE-Jk-kWe" firstAttribute="centerY" secondItem="jTq-qh-MLj" secondAttribute="centerY" id="es8-OV-ZQc"/>
-                <constraint firstAttribute="trailing" secondItem="sua-J1-ZTP" secondAttribute="trailing" id="j6H-S4-Xo8"/>
-                <constraint firstItem="rjE-Jk-kWe" firstAttribute="centerX" secondItem="jTq-qh-MLj" secondAttribute="centerX" id="lrf-bI-m4Z"/>
-                <constraint firstItem="Qu3-hb-N7p" firstAttribute="trailing" secondItem="MSn-41-DOC" secondAttribute="trailing" id="p0e-Af-4MS"/>
-                <constraint firstItem="MSn-41-DOC" firstAttribute="leading" secondItem="rjE-Jk-kWe" secondAttribute="leading" id="ryV-gm-ebL"/>
-                <constraint firstItem="MSn-41-DOC" firstAttribute="trailing" secondItem="rjE-Jk-kWe" secondAttribute="trailing" id="xpu-bb-B2E"/>
-                <constraint firstItem="MSn-41-DOC" firstAttribute="top" secondItem="rjE-Jk-kWe" secondAttribute="bottom" constant="8" id="y4I-3J-GhZ"/>
-            </constraints>
             <point key="canvasLocation" x="575" y="437"/>
         </view>
     </objects>
+    <resources>
+        <image name="country_selector" width="768" height="1024"/>
+    </resources>
 </document>

@@ -37,23 +37,24 @@ enum Question {
     
     var options: [String] {
         switch self {
-        case .First: return ["Normal a oleosa", "Normal", "Normal a seca"]
-        case .Second: return ["Claro", "Medio", "Castaño"]
+        case .First: return ["NORMAL", "NORMAL SECA", "NORMAL OLEOSA"]
+        case .Second: return ["ALTA", "MEDIA", "NO ES EL PRINCIPAL BENEFICIO BUSCADO"]
         case .Third: return ["SI", "NO"]
-        case .Forth: return ["Baja", "Media", "Larga"]
+        case .Forth: return ["SI", "NO"]
         case .Fifth: return ["SI", "NO"]
         }
     }
     
     var colors: [UIColor] {
-        return [UIColor.whiteColor(), UIColor.whiteColor(), UIColor.whiteColor()]
+        return [UIColor.clearColor(), UIColor.clearColor(), UIColor.clearColor()]
     }
     
     var viewControllerNibName: String {
-        switch self {
-        case .Second: return "AltQuestionViewController"
-        default: return "QuestionViewController"
-        }
+//        switch self {
+//        case .Second: return "AltQuestionViewController"
+//        default: return "QuestionViewController"
+//        }        
+        return "QuestionViewController"
     }
     
     var column: String {
@@ -72,11 +73,11 @@ enum Question {
     
     var title: String {
         switch self {
-        case .First: return "¿Cómo identificás el tipo de tu piel?"
-        case .Second: return "¿Cuál es tu tono de piel?"
-        case .Third: return "¿Notás en tu piel la presencia de manchas leves u oscuras?"
-        case .Forth: return "¿Cuál es para vos la duración ideal de la base?"
-        case .Fifth: return "¿Buscás que la base brinde tratamiento antiseñales?"
+        case .First: return "¿Cómo identificas tu tipo de de piel?"
+        case .Second: return "¿Cuál es para ti la duración ideal de la base?"
+        case .Third: return "¿Buscás que la base brinde tratamiento antiseñales?"
+        case .Forth: return "¿Notás en tu piel manchas oscuras?"
+        case .Fifth: return "¿Notás en tu piel manchas oscuras?"
         }
     }
     

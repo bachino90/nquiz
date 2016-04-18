@@ -43,13 +43,13 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        questionLabel.text = question.title
-        buttonOne.layer.cornerRadius = buttonOne.frame.width/2
-        buttonTwo.layer.cornerRadius = buttonTwo.frame.width/2
-        buttonThree.layer.cornerRadius = buttonThree.frame.width/2
-        for view in (colorPaletViews ?? []) {
-            view.layer.cornerRadius = view.frame.width/2
-        }
+//        questionLabel.text = question.title
+//        buttonOne.layer.cornerRadius = buttonOne.frame.width/2
+//        buttonTwo.layer.cornerRadius = buttonTwo.frame.width/2
+//        buttonThree.layer.cornerRadius = buttonThree.frame.width/2
+//        for view in (colorPaletViews ?? []) {
+//            view.layer.cornerRadius = view.frame.width/2
+//        }
         
         backgroundImageView.image = question.image
         

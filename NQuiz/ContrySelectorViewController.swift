@@ -11,53 +11,37 @@ import Foundation
 enum Country: String {
     case Argentina = "Argentina"
     case Chile = "Chile"
-    case Uruguay = "Uruguay"
-    case Brasil = "Brasil"
     case Peru = "Peru"
-    case Bolivia = "Bolivia"
-    case Paraguay = "Paraguay"
     case Colombia = "Colombia"
-    case Venezuela = "Venezuela"
+    case Mexico = "Mexico"
     
     var baseLiquidaName: String {
         switch self {
-        case .Argentina: return "Base Liquida"
-        case .Chile: return ""
-        case .Uruguay: return ""
-        case .Brasil: return ""
-        case .Peru: return ""
-        case .Bolivia: return ""
-        case .Paraguay: return ""
-        case .Colombia: return ""
-        case .Venezuela: return ""
+        case .Argentina: return "base_argentina"
+        case .Chile: return "base_chile"
+        case .Peru: return "base_peru"
+        case .Colombia: return "base_colombia"
+        case .Mexico: return "base_mexico"
         }
     }
     
     var matificName: String {
         switch self {
-        case .Argentina: return "Matific"
-        case .Chile: return ""
-        case .Uruguay: return ""
-        case .Brasil: return ""
-        case .Peru: return ""
-        case .Bolivia: return ""
-        case .Paraguay: return ""
-        case .Colombia: return ""
-        case .Venezuela: return ""
+        case .Argentina: return "matific_argentina"
+        case .Chile: return "matific_chile"
+        case .Peru: return "matific_peru"
+        case .Colombia: return "matific_colombia"
+        case .Mexico: return "matific_mexico"
         }
     }
     
     var radianceName: String {
         switch self {
-        case .Argentina: return "Radiance"
-        case .Chile: return ""
-        case .Uruguay: return ""
-        case .Brasil: return ""
-        case .Peru: return ""
-        case .Bolivia: return ""
-        case .Paraguay: return ""
-        case .Colombia: return ""
-        case .Venezuela: return ""
+        case .Argentina: return "radiance_argentina"
+        case .Chile: return "radiance_chile"
+        case .Peru: return "radiance_peru"
+        case .Colombia: return "radiance_colombia"
+        case .Mexico: return "radiance_mexico"
         }
     }
 }

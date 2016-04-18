@@ -10,15 +10,15 @@ import UIKit
 
 class ThanksViewController: UIViewController {
     
-    private let answer: String
-    @IBOutlet weak var answerLabel: UILabel!
+    private let answerImageName: String
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
     
-    init(answer: String) {
-        self.answer = answer
+    init(answerImageName: String) {
+        self.answerImageName = answerImageName
         super.init(nibName: "ThanksViewController", bundle: nil)
     }
     
@@ -28,12 +28,12 @@ class ThanksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        answerLabel.text = answer
+        backgroundImageView.image = UIImage(named: answerImageName)
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        performSelector(#selector(ThanksViewController.dismissMe), withObject: nil, afterDelay: 5.0)
+        performSelector(#selector(ThanksViewController.dismissMe), withObject: nil, afterDelay: 12.0)
     }
     
     func dismissMe() {
