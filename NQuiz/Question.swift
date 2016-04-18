@@ -12,15 +12,15 @@ class Game {
     var responses: [Question: String] = [:]
     
     var answer: String? {
-        if responses.count == 5 {
-            if responses[.First] == "Normal a oleosa" && responses[.Second] == "Mate" && responses[.Third] == "No es el principal beneficio buscado" && responses[.Forth] == "No" && responses[.Fifth] == "No" {
+        if responses.count == 4 {
+            if responses[.First] == "NORMAL SECA" {
+                return CountryManager.sharedManager.selectedCountry?.radianceName
+            }
+            if responses[.First] == "NORMAL OLEOSA" && responses[.Second] == "MEDIA" && responses[.Third] == "NO" && responses[.Forth] == "NO" {
                return CountryManager.sharedManager.selectedCountry?.matificName
             }
-            if responses[.First] == "Normal a seca" && responses[.Second] == "Satinado" && responses[.Third] == "Al menos 12hs" && responses[.Forth] == "No" && responses[.Fifth] == "No" {
-                return CountryManager.sharedManager.selectedCountry?.radianceName
-            }
-            if responses[.First] == "Normal a seca" && responses[.Second] == "Satinado" && responses[.Third] == "No es el principal beneficio buscado" && responses[.Forth] == "No" && responses[.Fifth] == "No" {
-                return CountryManager.sharedManager.selectedCountry?.radianceName
+            if responses[.First] == "NORMAL OLEOSA" && responses[.Second] == "NO ES EL PRINCIPAL BENEFICIO BUSCADO" && responses[.Third] == "NO" && responses[.Forth] == "NO" {
+                return CountryManager.sharedManager.selectedCountry?.matificName
             }
             return CountryManager.sharedManager.selectedCountry?.baseLiquidaName
         }
@@ -33,7 +33,7 @@ enum Question {
     case Second
     case Third
     case Forth
-    case Fifth
+//    case Fifth
     
     var options: [String] {
         switch self {
@@ -41,7 +41,7 @@ enum Question {
         case .Second: return ["ALTA", "MEDIA", "NO ES EL PRINCIPAL BENEFICIO BUSCADO"]
         case .Third: return ["SI", "NO"]
         case .Forth: return ["SI", "NO"]
-        case .Fifth: return ["SI", "NO"]
+//        case .Fifth: return ["SI", "NO"]
         }
     }
     
@@ -63,7 +63,7 @@ enum Question {
         case .Second: return "question2"
         case .Third: return "question3"
         case .Forth: return "question4"
-        case .Fifth: return "question5"
+//        case .Fifth: return "question5"
         }
     }
     
@@ -77,7 +77,7 @@ enum Question {
         case .Second: return "¿Cuál es para ti la duración ideal de la base?"
         case .Third: return "¿Buscás que la base brinde tratamiento antiseñales?"
         case .Forth: return "¿Notás en tu piel manchas oscuras?"
-        case .Fifth: return "¿Notás en tu piel manchas oscuras?"
+//        case .Fifth: return "¿Notás en tu piel manchas oscuras?"
         }
     }
     
@@ -86,8 +86,8 @@ enum Question {
         case .First: return .Second
         case .Second: return .Third
         case .Third: return .Forth
-        case .Forth: return .Fifth
-        case .Fifth: return nil
+        case .Forth: return nil
+//        case .Fifth: return nil
         }
     }
 }
