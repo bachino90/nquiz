@@ -13,7 +13,13 @@ class Game {
     
     var answer: String? {
         if responses.count == 4 {
-            if responses[.First] == "NORMAL SECA" {
+            if responses[.First] == "NORMAL SECA" && responses[.Second] == "NO ES EL PRINCIPAL BENEFICIO BUSCADO" {
+                return CountryManager.sharedManager.selectedCountry?.radianceName
+            }
+            if responses[.First] == "NORMAL SECA" && responses[.Second] == "MEDIA" && responses[.Forth] == "NO" {
+                return CountryManager.sharedManager.selectedCountry?.radianceName
+            }
+            if responses[.First] == "NORMAL SECA" && responses[.Second] == "ALTA" && responses[.Forth] == "NO" {
                 return CountryManager.sharedManager.selectedCountry?.radianceName
             }
             if responses[.First] == "NORMAL OLEOSA" && responses[.Second] == "MEDIA" && responses[.Third] == "NO" && responses[.Forth] == "NO" {
