@@ -24,6 +24,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet private weak var buttonThreeWidtConstraint: NSLayoutConstraint!
     @IBOutlet private weak var buttonThreeLeftMarginConstraint: NSLayoutConstraint!
     @IBOutlet private var colorPaletViews: [UIView]!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var buttonHeightConstraint: NSLayoutConstraint!
     
     private let question: Question
     
@@ -50,6 +52,24 @@ class QuestionViewController: UIViewController {
 //        for view in (colorPaletViews ?? []) {
 //            view.layer.cornerRadius = view.frame.width/2
 //        }
+        
+        if DeviceType.IS_IPHONE_4_OR_LESS {
+            bottomConstraint.constant = -100
+            buttonHeightConstraint.constant = 75
+        } else if DeviceType.IS_IPHONE_5 {
+            bottomConstraint.constant = -115
+            buttonHeightConstraint.constant = 90
+        } else if DeviceType.IS_IPHONE_6 {
+            bottomConstraint.constant = -245
+            buttonHeightConstraint.constant = 110
+        } else if DeviceType.IS_IPHONE_6P {
+            bottomConstraint.constant = -270
+            buttonHeightConstraint.constant = 120
+        } else if DeviceType.IS_IPAD {
+            buttonHeightConstraint.constant = 170
+        }
+        
+        buttonThreeWidtConstraint.constant = buttonHeightConstraint.constant
         
         backgroundImageView.image = question.image
         

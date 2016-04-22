@@ -26,6 +26,8 @@
 		EB4A8B8F1C83E53200AA6321 /* MiscUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4A8B8E1C83E53200AA6321 /* MiscUtils.m */; };
 		EB57FAFD1C86604500988E42 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB57FAFC1C86604500988E42 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EB57FAFF1C87351200988E42 /* AltQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB57FAFE1C87351200988E42 /* AltQuestionViewController.xib */; };
+		EB63B1EB1CC994D90025E1E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB63B1EA1CC994D90025E1E9 /* Default-568h@2x.png */; };
+		EB63B1ED1CC99A310025E1E9 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63B1EC1CC99A310025E1E9 /* UIDevice+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		EB57FAFA1C865FFF00988E42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB57FAFC1C86604500988E42 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		EB57FAFE1C87351200988E42 /* AltQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AltQuestionViewController.xib; sourceTree = "<group>"; };
+		EB63B1EA1CC994D90025E1E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EB63B1EC1CC99A310025E1E9 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		EB1BB97D1C83A41700C873EE = {
 			isa = PBXGroup;
 			children = (
+				EB63B1EA1CC994D90025E1E9 /* Default-568h@2x.png */,
 				EB1BB9881C83A41700C873EE /* NQuiz */,
 				EB1BB9871C83A41700C873EE /* Products */,
 				E4324BEDDDD9E066D2A1A685 /* Pods */,
@@ -124,6 +129,7 @@
 				EB44C6441CC1DB830048D356 /* ContrySelectorViewController.swift */,
 				EB44C6461CC1DB900048D356 /* CountrySelectorViewController.xib */,
 				EB44C6481CC1DBA30048D356 /* CountryManager.swift */,
+				EB63B1EC1CC99A310025E1E9 /* UIDevice+Extension.swift */,
 				EB4A8B8D1C83E53200AA6321 /* MiscUtils.h */,
 				EB4A8B8E1C83E53200AA6321 /* MiscUtils.m */,
 				EB1BB9901C83A41700C873EE /* Assets.xcassets */,
@@ -201,6 +207,7 @@
 				EB57FAFF1C87351200988E42 /* AltQuestionViewController.xib in Resources */,
 				EB1BB9AA1C83A45800C873EE /* QuizViewController.xib in Resources */,
 				EB44C6471CC1DB900048D356 /* CountrySelectorViewController.xib in Resources */,
+				EB63B1EB1CC994D90025E1E9 /* Default-568h@2x.png in Resources */,
 				EB1BB9AC1C83A45800C873EE /* ThanksViewController.xib in Resources */,
 				EB1BB9AE1C83A45800C873EE /* WelcomeViewController.xib in Resources */,
 			);
@@ -264,6 +271,7 @@
 				EB1BB9AB1C83A45800C873EE /* ThanksViewController.swift in Sources */,
 				EB44C6451CC1DB830048D356 /* ContrySelectorViewController.swift in Sources */,
 				EB1BB9A51C83A45800C873EE /* AppDelegate.swift in Sources */,
+				EB63B1ED1CC99A310025E1E9 /* UIDevice+Extension.swift in Sources */,
 				EB1BB9A61C83A45800C873EE /* Question.swift in Sources */,
 				EB4A8B8F1C83E53200AA6321 /* MiscUtils.m in Sources */,
 				EB1BB9AD1C83A45800C873EE /* WelcomeViewController.swift in Sources */,
@@ -376,6 +384,7 @@
 				PROVISIONING_PROFILE = "f9a1a98b-a3d6-4bf7-b054-7ce74c1dff81";
 				SWIFT_OBJC_BRIDGING_HEADER = "NQuiz/NQuiz-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -394,6 +403,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f9a1a98b-a3d6-4bf7-b054-7ce74c1dff81";
 				SWIFT_OBJC_BRIDGING_HEADER = "NQuiz/NQuiz-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
