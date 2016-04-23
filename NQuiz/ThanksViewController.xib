@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -19,6 +19,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiance_argentina" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-B7-prQ">
                     <rect key="frame" x="-84" y="0.0" width="768" height="600"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="3HD-j2-tbK">
+                    <rect key="frame" x="-84" y="0.0" width="768" height="600"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULx-8H-U4O">
                     <rect key="frame" x="235" y="470" width="130" height="130"/>
                     <constraints>
@@ -33,13 +36,16 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="ULx-8H-U4O" firstAttribute="centerX" secondItem="yG1-hC-dEQ" secondAttribute="centerX" id="6c0-5y-hoV"/>
+                <constraint firstItem="3HD-j2-tbK" firstAttribute="centerX" secondItem="yG1-hC-dEQ" secondAttribute="centerX" id="R1S-Bk-qaE"/>
                 <constraint firstAttribute="trailing" secondItem="Etb-B7-prQ" secondAttribute="trailing" id="RDh-8q-HpG"/>
                 <constraint firstAttribute="bottom" secondItem="ULx-8H-U4O" secondAttribute="bottom" id="SfD-q6-wQW"/>
                 <constraint firstItem="Etb-B7-prQ" firstAttribute="centerX" secondItem="yG1-hC-dEQ" secondAttribute="centerX" id="VhS-kY-8go"/>
                 <constraint firstItem="Etb-B7-prQ" firstAttribute="top" secondItem="yG1-hC-dEQ" secondAttribute="top" id="XFB-jb-OhV"/>
                 <constraint firstAttribute="bottom" secondItem="Etb-B7-prQ" secondAttribute="bottom" id="XYI-vY-Fvr"/>
+                <constraint firstItem="3HD-j2-tbK" firstAttribute="top" secondItem="yG1-hC-dEQ" secondAttribute="top" id="hKQ-Xi-s9u"/>
                 <constraint firstItem="ULx-8H-U4O" firstAttribute="centerY" secondItem="yG1-hC-dEQ" secondAttribute="centerY" constant="405" id="pge-rN-eNk"/>
                 <constraint firstItem="Etb-B7-prQ" firstAttribute="leading" secondItem="yG1-hC-dEQ" secondAttribute="leading" id="szf-Ht-Prv"/>
+                <constraint firstAttribute="bottom" secondItem="3HD-j2-tbK" secondAttribute="bottom" id="z8s-A9-rCj"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
@@ -52,6 +58,7 @@
         </view>
     </objects>
     <resources>
+        <image name="button" width="768" height="1023"/>
         <image name="radiance_argentina" width="768" height="1024"/>
     </resources>
 </document>
