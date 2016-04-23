@@ -10,6 +10,9 @@ import UIKit
 
 class TonoViewController: UIViewController {
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     
     @IBAction func dismissTouched(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
