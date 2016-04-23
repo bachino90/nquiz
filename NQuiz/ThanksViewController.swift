@@ -44,4 +44,12 @@ class ThanksViewController: UIViewController {
     @IBAction func startAgainButtonTouched(sender: AnyObject) {
         dismissMe()
     }
+    
+    @IBAction func tonoButtonTouched(sender: AnyObject) {
+        navigationController?.pushViewController(TonoViewController(), animated: true)
+    }
+    
+    @IBAction func instructionsButtonTouched(sender: AnyObject) {
+        navigationController?.pushViewController(InstructionsViewController(), animated: true)
+    }
 }
