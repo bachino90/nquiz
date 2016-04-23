@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstructionsViewController" customModule="NQuiz" customModuleProvider="target">
             <connections>
+                <outlet property="backgrounImageView" destination="P4R-u4-ahv" id="zx5-7T-yKh"/>
                 <outlet property="view" destination="qCk-is-7Gi" id="TyH-vD-ckP"/>
             </connections>
         </placeholder>
@@ -21,7 +22,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1N-iP-4f4">
                     <rect key="frame" x="0.0" y="500" width="600" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="Cmd-o2-5RQ"/>
+                        <constraint firstAttribute="height" constant="100" id="Cmd-o2-5RQ">
+                            <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                        </constraint>
                     </constraints>
                     <connections>
                         <action selector="dismissTouched:" destination="-1" eventType="touchUpInside" id="SBc-e0-L5l"/>

@@ -12,6 +12,7 @@ class ThanksViewController: UIViewController {
     
     private let answerImageName: String
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -34,7 +35,7 @@ class ThanksViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        performSelector(#selector(ThanksViewController.dismissMe), withObject: nil, afterDelay: 12.0)
+//        performSelector(#selector(ThanksViewController.dismissMe), withObject: nil, afterDelay: 12.0)
     }
     
     func dismissMe() {

@@ -44,6 +44,20 @@ enum Country: String {
         case .Mexico: return "radiance_mexico"
         }
     }
+    
+    var instructionsImage: UIImage? {
+        switch self {
+        case .Argentina: return UIImage(named: "instrucciones_arg")
+        default: return UIImage(named: "instrucciones")
+        }
+    }
+    
+    var tonoImage: UIImage? {
+        switch self {
+        case .Argentina: return UIImage(named: "tono_arg")
+        default: return UIImage(named: "tono")
+        }
+    }
 }
 
 protocol CountrySelectorViewControllerDelegate: class {

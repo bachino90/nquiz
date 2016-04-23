@@ -10,11 +10,18 @@ import UIKit
 
 class TonoViewController: UIViewController {
     
+    @IBOutlet weak var backgrounImageView: UIImageView!
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
     
     @IBAction func dismissTouched(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        backgrounImageView.image = CountryManager.sharedManager.selectedCountry?.tonoImage
     }
 }
