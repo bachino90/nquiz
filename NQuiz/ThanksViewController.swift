@@ -29,6 +29,7 @@ class ThanksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundImageView.image = UIImage(named: answerImageName)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewDidAppear(animated: Bool) {

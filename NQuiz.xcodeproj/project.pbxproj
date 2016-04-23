@@ -28,6 +28,10 @@
 		EB57FAFF1C87351200988E42 /* AltQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB57FAFE1C87351200988E42 /* AltQuestionViewController.xib */; };
 		EB63B1EB1CC994D90025E1E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB63B1EA1CC994D90025E1E9 /* Default-568h@2x.png */; };
 		EB63B1ED1CC99A310025E1E9 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63B1EC1CC99A310025E1E9 /* UIDevice+Extension.swift */; };
+		EBEF78651CCC0424000499EB /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF78641CCC0424000499EB /* InstructionsViewController.swift */; };
+		EBEF78671CCC044B000499EB /* TonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF78661CCC044A000499EB /* TonoViewController.swift */; };
+		EBEF78691CCC0473000499EB /* TonoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBEF78681CCC0473000499EB /* TonoViewController.xib */; };
+		EBEF786B1CCC0482000499EB /* InstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBEF786A1CCC0482000499EB /* InstructionsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		EB57FAFE1C87351200988E42 /* AltQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AltQuestionViewController.xib; sourceTree = "<group>"; };
 		EB63B1EA1CC994D90025E1E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EB63B1EC1CC99A310025E1E9 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		EBEF78641CCC0424000499EB /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		EBEF78661CCC044A000499EB /* TonoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TonoViewController.swift; sourceTree = "<group>"; };
+		EBEF78681CCC0473000499EB /* TonoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TonoViewController.xib; sourceTree = "<group>"; };
+		EBEF786A1CCC0482000499EB /* InstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstructionsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,10 @@
 				EB1BB9A01C83A45800C873EE /* QuizViewController.xib */,
 				EB1BB9A11C83A45800C873EE /* ThanksViewController.swift */,
 				EB1BB9A21C83A45800C873EE /* ThanksViewController.xib */,
+				EBEF78641CCC0424000499EB /* InstructionsViewController.swift */,
+				EBEF786A1CCC0482000499EB /* InstructionsViewController.xib */,
+				EBEF78661CCC044A000499EB /* TonoViewController.swift */,
+				EBEF78681CCC0473000499EB /* TonoViewController.xib */,
 				EB1BB9A31C83A45800C873EE /* WelcomeViewController.swift */,
 				EB1BB9A41C83A45800C873EE /* WelcomeViewController.xib */,
 				EB44C6441CC1DB830048D356 /* ContrySelectorViewController.swift */,
@@ -203,9 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1BB9911C83A41700C873EE /* Assets.xcassets in Resources */,
+				EBEF78691CCC0473000499EB /* TonoViewController.xib in Resources */,
 				EB1BB9A81C83A45800C873EE /* QuestionViewController.xib in Resources */,
 				EB57FAFF1C87351200988E42 /* AltQuestionViewController.xib in Resources */,
 				EB1BB9AA1C83A45800C873EE /* QuizViewController.xib in Resources */,
+				EBEF786B1CCC0482000499EB /* InstructionsViewController.xib in Resources */,
 				EB44C6471CC1DB900048D356 /* CountrySelectorViewController.xib in Resources */,
 				EB63B1EB1CC994D90025E1E9 /* Default-568h@2x.png in Resources */,
 				EB1BB9AC1C83A45800C873EE /* ThanksViewController.xib in Resources */,
@@ -269,11 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1BB9AB1C83A45800C873EE /* ThanksViewController.swift in Sources */,
+				EBEF78671CCC044B000499EB /* TonoViewController.swift in Sources */,
 				EB44C6451CC1DB830048D356 /* ContrySelectorViewController.swift in Sources */,
 				EB1BB9A51C83A45800C873EE /* AppDelegate.swift in Sources */,
 				EB63B1ED1CC99A310025E1E9 /* UIDevice+Extension.swift in Sources */,
 				EB1BB9A61C83A45800C873EE /* Question.swift in Sources */,
 				EB4A8B8F1C83E53200AA6321 /* MiscUtils.m in Sources */,
+				EBEF78651CCC0424000499EB /* InstructionsViewController.swift in Sources */,
 				EB1BB9AD1C83A45800C873EE /* WelcomeViewController.swift in Sources */,
 				EB1BB9A71C83A45800C873EE /* QuestionViewController.swift in Sources */,
 				EB1BB9B11C83ABA900C873EE /* main.m in Sources */,

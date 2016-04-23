@@ -39,7 +39,8 @@ class QuizViewController: UIViewController {
     
     private func showThanks() {
         if let answer = game.answer {
-            presentViewController(ThanksViewController(answerImageName: answer), animated: true) { [weak self] in
+            let navController = UINavigationController(rootViewController: ThanksViewController(answerImageName: answer))
+            presentViewController(navController, animated: true) { [weak self] in
                 if let strongSelf = self {
                     strongSelf.game = Game()
                     strongSelf.indexChangeBlock(.First)
