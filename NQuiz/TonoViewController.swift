@@ -16,6 +16,14 @@ class TonoViewController: UIViewController {
         return true
     }
     
+    init() {
+        super.init(nibName: "TonoViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     @IBAction func dismissTouched(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
