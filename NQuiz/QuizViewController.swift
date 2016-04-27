@@ -35,6 +35,7 @@ class QuizViewController: UIViewController {
         pageController.didMoveToParentViewController(self)
         
 //        indexChangeBlock(.First)
+        welcomeVC.delegate = self
         pageController.setViewControllers([welcomeVC], direction: .Forward, animated: true, completion: nil)
     }
     

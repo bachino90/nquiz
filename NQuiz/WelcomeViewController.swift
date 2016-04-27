@@ -44,10 +44,10 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func startButtonTouched(sender: AnyObject) {
-        if let name = nameTextField.text where name != "" && name != "Ingresá tu nombre y apellido" {
+//        if let name = nameTextField.text where name != "" && name != "Ingresá tu nombre y apellido" {
             nameTextField.resignFirstResponder()
-            delegate?.welcomeViewController(self, hasStartedWithName: name)
-        }
+            delegate?.welcomeViewController(self, hasStartedWithName: "")
+//        }
     }
 }
 

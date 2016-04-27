@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,24 +16,13 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="AvP-yB-3EV">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="AvP-yB-3EV">
+                    <rect key="frame" x="-84" y="0.0" width="768" height="600"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74L-XG-M4N">
-                    <rect key="frame" x="235" y="512" width="120" height="120"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="120" id="Y33-eC-JzO"/>
-                        <constraint firstAttribute="height" constant="120" id="deh-Cz-wH5"/>
-                    </constraints>
-                    <state key="normal">
-                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="startButtonTouched:" destination="-1" eventType="touchUpInside" id="dtB-1H-QbE"/>
-                    </connections>
-                </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ingresá tu nombre y apellido" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7R2-bu-cYD">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_button" translatesAutoresizingMaskIntoConstraints="NO" id="zTu-wH-toz">
+                    <rect key="frame" x="-84" y="0.0" width="768" height="600"/>
+                </imageView>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ingresá tu nombre y apellido" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7R2-bu-cYD">
                     <rect key="frame" x="100" y="383" width="390" height="55"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -47,22 +36,61 @@
                         <outlet property="delegate" destination="-1" id="cgq-Yw-HMc"/>
                     </connections>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74L-XG-M4N">
+                    <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Y33-eC-JzO"/>
+                        <constraint firstAttribute="height" constant="120" id="deh-Cz-wH5"/>
+                        <constraint firstAttribute="height" constant="200" id="lmf-ao-rqK">
+                            <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Y33-eC-JzO"/>
+                            <exclude reference="deh-Cz-wH5"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="startButtonTouched:" destination="-1" eventType="touchUpInside" id="dtB-1H-QbE"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="74L-XG-M4N" secondAttribute="bottom" id="3GY-qj-Ry7"/>
                 <constraint firstItem="74L-XG-M4N" firstAttribute="top" secondItem="7R2-bu-cYD" secondAttribute="bottom" constant="74" id="F4j-LM-Qes"/>
+                <constraint firstItem="zTu-wH-toz" firstAttribute="top" secondItem="7Yb-Yj-e3p" secondAttribute="top" id="GJF-CH-xcq"/>
+                <constraint firstItem="74L-XG-M4N" firstAttribute="leading" secondItem="7Yb-Yj-e3p" secondAttribute="leading" id="I3j-en-hdh"/>
                 <constraint firstItem="7R2-bu-cYD" firstAttribute="centerX" secondItem="7Yb-Yj-e3p" secondAttribute="centerX" constant="-5" id="KkY-dD-n2w"/>
                 <constraint firstItem="7R2-bu-cYD" firstAttribute="centerY" secondItem="7Yb-Yj-e3p" secondAttribute="centerY" constant="110" id="Olf-7K-pU2"/>
                 <constraint firstAttribute="bottom" secondItem="AvP-yB-3EV" secondAttribute="bottom" id="PL9-zd-PIy"/>
                 <constraint firstItem="AvP-yB-3EV" firstAttribute="leading" secondItem="7Yb-Yj-e3p" secondAttribute="leading" id="UU8-cb-EXc"/>
+                <constraint firstAttribute="bottom" secondItem="zTu-wH-toz" secondAttribute="bottom" id="b38-fU-jFe"/>
                 <constraint firstAttribute="trailing" secondItem="AvP-yB-3EV" secondAttribute="trailing" id="kB9-TX-xnC"/>
                 <constraint firstItem="74L-XG-M4N" firstAttribute="centerX" secondItem="7R2-bu-cYD" secondAttribute="centerX" id="lEv-ln-pf7"/>
+                <constraint firstItem="AvP-yB-3EV" firstAttribute="centerX" secondItem="7Yb-Yj-e3p" secondAttribute="centerX" id="rjU-4e-XFh"/>
                 <constraint firstItem="AvP-yB-3EV" firstAttribute="top" secondItem="7Yb-Yj-e3p" secondAttribute="top" id="uB7-o9-4EC"/>
+                <constraint firstItem="zTu-wH-toz" firstAttribute="centerX" secondItem="7Yb-Yj-e3p" secondAttribute="centerX" id="uBB-4G-ZYa"/>
+                <constraint firstAttribute="trailing" secondItem="74L-XG-M4N" secondAttribute="trailing" id="x2X-D5-0Pv"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="UU8-cb-EXc"/>
+                    <exclude reference="kB9-TX-xnC"/>
+                    <exclude reference="F4j-LM-Qes"/>
+                    <exclude reference="lEv-ln-pf7"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="242" y="411"/>
         </view>
     </objects>
     <resources>
         <image name="welcome" width="768" height="1024"/>
+        <image name="welcome_button" width="768" height="1024"/>
     </resources>
 </document>
