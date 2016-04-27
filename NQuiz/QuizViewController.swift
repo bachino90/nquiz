@@ -14,6 +14,7 @@ class QuizViewController: UIViewController {
     
     private var country: Country = .Argentina
     private var game = Game()
+    private let welcomeVC = WelcomeViewController()
     
     override func prefersStatusBarHidden() -> Bool { return true }
     
@@ -33,7 +34,8 @@ class QuizViewController: UIViewController {
         MiscUtils.addConstraintsToMatchItsSuperView(pageController.view)
         pageController.didMoveToParentViewController(self)
         
-        indexChangeBlock(.First)
+//        indexChangeBlock(.First)
+        pageController.setViewControllers([welcomeVC], direction: .Forward, animated: true, completion: nil)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -51,11 +53,10 @@ class QuizViewController: UIViewController {
             presentViewController(navController, animated: true) { [weak self] in
                 if let strongSelf = self {
                     strongSelf.game = Game()
-                    strongSelf.indexChangeBlock(.First)
+                    strongSelf.pageController.setViewControllers([strongSelf.welcomeVC], direction: .Forward, animated: true, completion: nil)
                 }
             }
         }
-
     }
     
     private func indexChangeBlock(next: Question) {
